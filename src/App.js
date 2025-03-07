@@ -5,7 +5,7 @@ function App() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/api/')
+    axios.get('https://hello-world-j6hv.onrender.com/api/')
       .then(response => {
         setMessage(response.data.message);
       })
